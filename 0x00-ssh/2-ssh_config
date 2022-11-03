@@ -31,5 +31,4 @@ Host *
         HashKnownHosts yes
         GSSAPIAuthentication yes
         IdentityFile ~/.ssh/school
-        User ubuntu
-        HostName 3.88.184.247
+        BatchMode yes
