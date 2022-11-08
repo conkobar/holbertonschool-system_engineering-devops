@@ -2,8 +2,9 @@
 # installs ufw nad sets it up per task requirements
 sudo apt update -y
 sudo apt install ufw -y
-sudo ufw default deny incoming
 sudo ufw default allow outgoing
+sudo ufw default deny incoming
 sudo ufw allow 22/tcp
 sudo ufw allow 413/tcp
 sudo ufw allow 80/tcp
+sudo ufw enable
