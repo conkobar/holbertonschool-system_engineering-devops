@@ -5,8 +5,6 @@ import requests
 
 
 if __name__ == "__main__":
-
-    # get the given employees info
     employee = requests.get(
         "https://jsonplaceholder.typicode.com/users/{}".format(argv[1])
     ).json()
