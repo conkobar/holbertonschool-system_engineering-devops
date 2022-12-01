@@ -23,10 +23,10 @@ if __name__ == "__main__":
     # make it an actual list object
     todo_list = [
         {
-            "USER_ID":argv[1],
-            "USERNAME":employee["username"],
-            "TASK_COMPLETED_STATUS":task["completed"],
-            "TASK_TITLE":task["title"]
+            "USER_ID": argv[1],
+            "USERNAME": employee["username"],
+            "TASK_COMPLETED_STATUS": task["completed"],
+            "TASK_TITLE": task["title"]
         } for task in todos
     ]
 
