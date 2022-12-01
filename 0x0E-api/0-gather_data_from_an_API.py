@@ -24,5 +24,5 @@ if __name__ == "__main__":
     print(
         "Employee {} is done with tasks({}/{}):".format(
             employee.get("name"), len(todo_list), len(todos)
-        ), *todo_list, sep="\n\t"
+        ), *todo_list, sep="\n\t "
     )
