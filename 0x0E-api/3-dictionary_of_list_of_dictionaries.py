@@ -21,11 +21,13 @@ if __name__ == "__main__":
         user['id']: user['username'] for user in users
     }
     tasks = {
-        task['userId']: {
-            'username': user_info[task['userId']],
-            'task': task['title'],
-            'completed': task['completed']
-        } for task in todos
+        [
+                task['userId']: {
+                    'username': user_info[task['userId']],
+                    'task': task['title'],
+                    'completed': task['completed']
+                }
+        ]
     }
 
     # format and print response
